@@ -1,0 +1,44 @@
+@import './colors.scss';
+
+.wrapper_toDo {
+    border: 5px solid rgb(37, 167, 25);
+    width: 400px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 5px;
+    background-color: rgb(38, 204, 216);
+    font-family: cursive;
+
+    .toDo_item {
+        background-color: $red-color;
+        width: 300px;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5px;
+        border-radius: 5px;
+
+        .description {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            border: 3px solid, green;
+        }
+
+        .checked {
+            opacity: 0.2;
+            background-color: green;
+            border-radius: 5px;
+        }
+
+    }
+    
+};
+
+
+
+

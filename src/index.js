@@ -1,3 +1,6 @@
+import '../styles/style.scss';
+import Task from './funcConstructor.js'
+
 const toDo_input = document.getElementById('basket_input');
 const toDo_btn = document.getElementById('btn_basket');
 const toDo_list = document.querySelector('.toDo');
@@ -7,10 +10,6 @@ let tasks;
 
 let toDoItemElems = [];
 
-function Task(description) {
-     this.description = description;
-     this.completed = false;
-}
 
 const createTemplate = (task, index) => {
     return `
